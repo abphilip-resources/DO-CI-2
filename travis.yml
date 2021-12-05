@@ -1,0 +1,14 @@
+# https://app.travis-ci.com/github/abphilip-resources/DO-CI-2/jobs/550891977
+
+language: python                          # Select language to run in
+
+python: 3.8                               # Select python version
+script:
+  - python test.py                        # Run test.py
+
+notifications:                            # Notifications to the builder
+  email:
+    recipients: 
+      - allenbphilip@gmail.com            # Email address to send to
+    on_success: never                     # Don't send email on success
+    on_failure: always                    # Always Send email on failure
